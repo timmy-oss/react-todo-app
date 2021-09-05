@@ -80,15 +80,15 @@ function TodoContainer() {
 		const todosFromStorage = syncTodos(defaultTodos, false);
 		setUnfilteredTodos(todosFromStorage);
 
-		return () => {
-			if (
-				!confirm(
-					'You are leaving this page, do you want your todos saved?'
-				)
-			) {
-				syncTodos(undefined, true);
-			}
-		};
+		// return () => {
+		// 	if (
+		// 		!confirm(
+		// 			'You are leaving this page, do you want your todos saved?'
+		// 		)
+		// 	) {
+		// 		syncTodos(undefined, true);
+		// 	}
+		// };
 	}, []);
 
 	React.useEffect(() => {
