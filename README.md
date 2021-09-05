@@ -5,7 +5,7 @@ This is a fairly complex todo app powered by the next.js framework for react. It
 
 ## Preview
 
-Preview the example live on [Vercel](http://todo-app-chi-one.vercel.app/):
+Preview the example live on [Vercel](http://todo-app-k2.vercel.app/):
 
-[![Open in Vercel](https://developer.stackblitz.com/img/open_in_stackblitz.svg)]
+<!-- [![Open in Vercel](https://developer.stackblitz.com/img/open_in_stackblitz.svg)] -->
 
