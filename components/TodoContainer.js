@@ -313,9 +313,11 @@ function TodoContainer() {
 				))}
 
 				<p className='text-gray-700/70 text-base text-center font-normal py-16 p-3'>
-					{!todos.length && !unfilteredTodos.length
+					{!todos.length &&
+					(unfilteredTodos ? !unfilteredTodos.length : true)
 						? "There's nothing to show, add a new todo"
-						: unfilteredTodos.length && !todos.length
+						: (unfilteredTodos ? unfilteredTodos.length : false) &&
+						  !todos.length
 						? "There's nothing to show in this category"
 						: ''}
 				</p>
