@@ -261,7 +261,9 @@ function TodoContainer() {
 							name='filterBy'
 							disabled={
 								numberOfOpenForms > 0 ||
-								unfilteredTodos.length === 0
+								(unfilteredTodos
+									? !unfilteredTodos.length
+									: true)
 							}
 						>
 							<option
