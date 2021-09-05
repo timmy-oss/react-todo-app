@@ -78,6 +78,10 @@ function TodoContainer() {
 	// Sync from Local Storage
 	React.useEffect(() => {
 		const todosFromStorage = syncTodos(defaultTodos, false);
+		if (todosFromStorage === null) {
+			setUnfilteredTodos([]);
+			return;
+		}
 		setUnfilteredTodos(todosFromStorage);
 
 		// return () => {
